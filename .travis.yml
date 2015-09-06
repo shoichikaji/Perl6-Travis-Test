@@ -3,5 +3,5 @@ perl6:
   - latest
 install:
   - rakudobrew build-panda
-  - panda --notests install `perl6 -MJSON::Tiny -e 'from-json("META.info".IO.slurp)<depends>.say'`
+  - panda --notests install `perl6 -MJSON::Fast -e 'from-json("META.info".IO.slurp)<depends>.say'`
 sudo: false
