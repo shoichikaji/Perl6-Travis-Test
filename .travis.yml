@@ -3,5 +3,5 @@ perl6:
   - latest
 install:
   - rakudobrew build-panda
-  - panda --notests install `perl6 -MJSON::Fast -e 'my @d = from-json("META.info".IO.slurp)<depends>; say "@d[]"'`
+  - panda --notests installdeps .
 sudo: false
