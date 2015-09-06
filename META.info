@@ -6,7 +6,8 @@
     "Perl6::Travis::Test": "lib/Perl6/Travis/Test.pm6"
   },
   "depends": [
-    "Pod::To::Markdown"
+    "Pod::To::Markdown",
+    "JSON::Fast"
   ],
   "description": "",
   "version": "*"
