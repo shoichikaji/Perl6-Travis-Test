@@ -2,9 +2,8 @@ language: perl6
 perl6:
   - latest
 install:
-  - rakudobrew build-panda
+  - ( git clone git://github.com/shoichikaji/panda.git /tmp/panda && cd /tmp/panda && git checkout -b workaround origin/workaround && perl6 bootstrap.pl )
   - panda --notests installdeps .
 script:
-  - which perl && which prove && perl -V && prove --version
   - PERL6LIB=$PWD/lib prove -e perl6 -r t/
 sudo: false

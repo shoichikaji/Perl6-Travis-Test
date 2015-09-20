@@ -1,7 +1,7 @@
 {
   "name": "Perl6::Travis::Test",
   "source-url": "git://github.com/shoichikaji/Perl6-Travis-Test.git",
-  "author": "Shoichi Kaji",
+  "perl": "v6",
   "provides": {
     "Perl6::Travis::Test": "lib/Perl6/Travis/Test.pm6"
   },
@@ -10,5 +10,8 @@
     "JSON::Fast"
   ],
   "description": "",
-  "version": "*"
+  "version": "*",
+  "authors": [
+    "Shoichi Kaji"
+  ]
 }

@@ -4,4 +4,4 @@ use Perl6::Travis::Test;
 
 pass "replace me";
 
-done;
+done-testing;

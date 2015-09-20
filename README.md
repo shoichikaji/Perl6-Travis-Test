@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shoichikaji/Perl6-Travis-Test.svg?branch=master)](https://travis-ci.org/shoichikaji/Perl6-Travis-Test)
+
 NAME
 ====
 
