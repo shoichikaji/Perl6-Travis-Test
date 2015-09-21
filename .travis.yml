@@ -3,7 +3,7 @@ perl6:
   - latest
 install:
   - rakudobrew rehash
-  - ( git clone git://github.com/shoichikaji/panda.git /tmp/panda && cd /tmp/panda && git checkout -b workaround origin/workaround && perl6 bootstrap.pl )
+  - ( git clone -b workaround git://github.com/shoichikaji/panda.git /tmp/panda && cd /tmp/panda && perl6 bootstrap.pl )
   - rakudobrew rehash
   - panda --notests installdeps .
 script:
