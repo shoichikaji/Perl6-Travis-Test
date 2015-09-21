@@ -2,6 +2,10 @@ language: perl6
 perl6:
   - latest
 install:
+  - env
+  - echo $PATH
+  - ls -al $HOME/.rakudobrew/bin
+  - ls -al $HOME/.rakudobrew/moar-nom/install/share/perl6/site/bin $HOME/.rakudobrew/moar-nom/install/bin
   - ( git clone git://github.com/shoichikaji/panda.git /tmp/panda && cd /tmp/panda && git checkout -b workaround origin/workaround && perl6 bootstrap.pl )
   - rakudobrew rehash
   - panda --notests installdeps .
